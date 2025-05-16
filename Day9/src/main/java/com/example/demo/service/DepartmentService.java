@@ -38,6 +38,9 @@ public class DepartmentService {
 		return true;
 	}
 
+	public Department addDept(Department department) {
+	    return repo.save(department);
+	}
 	
 }
 
