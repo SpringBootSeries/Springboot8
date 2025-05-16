@@ -2,11 +2,13 @@ package com.example.demo.model;
 
 import java.util.List;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 
-public class Employee {
+@Entity
+public class Employee extends Person {
 	@Id
 	private String EmpNo;
 	private String name;
