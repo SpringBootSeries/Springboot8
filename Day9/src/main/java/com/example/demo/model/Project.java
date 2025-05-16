@@ -2,10 +2,13 @@ package com.example.demo.model;
 
 import java.util.List;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.JoinColumn;
 
+@Entity
 public class Project {
 	@Id
 	private int id;
